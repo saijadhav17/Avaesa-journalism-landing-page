@@ -5,12 +5,12 @@ const Course = ({ image, category, title, participants, rating, price }) => {
   return (
     <div className="p-2 shadow-lg min-w-[15rem] bg-white rounded-md">
       <img src={image} alt="" />
-      <div className="mt-2 text-xs text-Teal">{category}</div>
+      <div className="mt-2 text-xs text-Blue">{category}</div>
       <div className="text-sm mt-2 font-bold">{title}</div>
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="bg-Solitude p-1 rounded-full">
-            <AiOutlineUser className="text-Teal" />
+            <AiOutlineUser className="text-Blue" />
           </div>
           <div className="text-sm font-bold">{participants}</div>
         </div>
@@ -20,7 +20,7 @@ const Course = ({ image, category, title, participants, rating, price }) => {
           </div>
           <div className="text-sm font-bold">{rating}</div>
         </div>
-        <div className="text-sm font-bold">${price}</div>
+        <div className="text-sm font-bold">Rs.{price}</div>
       </div>
     </div>
   );
